@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='doodleStyles.css')}}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Doodle App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="doodle-toolbar-container">
+            <section class="doodle-area">
+                <canvas class="doodle-canvas" id="doodle-canvas"></canvas>
+            </section>
+            <section class="tool-bar">
+                <div class="row">
+                    <label class="title">Options</label>
+                    <button id="submit-canvas">Submit</button>
+                    <button id="clear-canvas">Clear</button>
+                </div>
+            </section>
+        </div>
+
+        <section class="prediction-board">
+            <label id="prediction-header">Predictions</label>
+
+            <ul id="prediction-list">
+
+
+            </ul>
+            
+            <!--
+            <ul class="prediction-list">
+                <li class="prediction-item">placeholder 100%</li>
+                <li class="prediction-item">placeholder 100%</li>
+                <li class="prediction-item">placeholder 100%</li>
+            </ul>
+            -->
+        </section>
+    </div>
+<script src="{{ url_for('static', filename='doodleScript.js')}}"></script>
+</body>
+</html>
