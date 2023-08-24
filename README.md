@@ -10,7 +10,7 @@ Run with
 python app.py
 ```
 
-Follow go to web address displayed by terminal.
+Go to web address displayed by terminal.
 
 Draw using left click on the canvas and clear canvas using the clear button.
 
