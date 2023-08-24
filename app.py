@@ -15,7 +15,7 @@ def predict():
     #print(request.values["canvas"])
     img64 = request.values["canvas"].split(',')
     img64 = img64[1]
-    predictions = doodle_predict.predict(img64)
+    predictions = doodlePredict.predict(img64)
     print(predictions)
     predictions = predictions.tolist()
     return predictions
